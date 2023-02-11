@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>HAND GESTURE APP </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h2 class="btn btn-warning">HAND GESTURE APP <br>
+      <span>&#128076;</span>
+      <span>&#128077;</span>
+      <span>&#9996;</span>
+     </h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Amazing?</b>
+        <br>
+        <b style="color: black">All the best?</b>
+        <br>
+        <b style="color: red">Victory?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-default">Webcam View-</label>
+        <div id="camera">
+
+        </div>
+        <br><br>
+        <button onclick="captureimage()" class="btn btn-warning">Capture Image</button>
+
+      </div>
+       
+      <div class="col-md-4 col-sm-12 col-xs-12" >
+        <label class="btn btn-default" id="">Prediction 1 -</label>
+        <p class="handgesture" id="handgesture1">
+
+        </p>
+        <p class="emoji" id="emoji1">
+
+        </p>
+        <label class="btn btn-default">Prediction 2 -</label>
+        <p class="handgesture" id="handgesture2">
+
+        </p>
+        <p class="emoji" id="emoji2">
+
+        </p>
+    
+
+      </div>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12" >
+	      <label class="btn btn-default">Snapshot - </label>
+        <div id="result">
+
+        </div>
+
+        <br><br>
+        <button onclick="pridictimage()" class="btn btn-success">Pridict Emoji</button>
+
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
